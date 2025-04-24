@@ -4,7 +4,7 @@ const msg = document.querySelector(".form-message");
 
 (function () {
   // https://dashboard.emailjs.com/admin/account
-  emailjs.init("YOUR_PUBLIC_KEY");
+  emailjs.init("RW1HRpw2mxpPmkVyK");
 })();
 
 window.onload = function () {
