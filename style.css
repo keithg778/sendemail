@@ -1,57 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    <style>
+        body {
+            margin: 3rem;
+        }
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+        #myForm {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 5px solid #ddd;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-form {
-    width: 50%;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
-    padding: 3rem;
-}
 
-label {
-    font-weight: 600;
-    margin-bottom: .5rem;
-    display: block;
-    color: #3e4455;
-}
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
 
-.input-control {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 1rem;
-    width: 100%;
-}
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
 
-.contact-msg {
-    height: 150px;
-    line-height: 1.2;
-    padding: 20px 30px;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    resize: none;
-}
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-.input-control:focus-visible,
-.contact-msg:focus-visible {
-    outline: none;
+        button[type="submit"]:hover {
+            background-color: rgb(22, 138, 22);
+        }
+textarea {
+  width: 100%;
+  height: 130px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;  
 }
-
-.btn-submit {
-    margin-top: 20px;
-    width: 100%;
-    padding: 15px 30px;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    background-color: #ff5252;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-}
+        
+    </style>
