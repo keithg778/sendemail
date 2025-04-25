@@ -1,3 +1,6 @@
+$(document).ready(function(){
+
+// code fragment
 // the form id is myForm
 $('#myForm').on('submit', function(event) {
     event.preventDefault(); // prevent reload
@@ -17,4 +20,7 @@ $('#myForm').on('submit', function(event) {
     }).fail(function(error) {
         alert('Oops... ' + JSON.stringify(error));
     });
+});
+// code fragment
+
 });
