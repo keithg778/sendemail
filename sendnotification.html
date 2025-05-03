@@ -80,15 +80,17 @@ input[type=submit]:hover {
         <br/>
         <b> Description: </b> ${subject.value}
         `
-        Email.send({
-            SecureToken : "dd488baa-34ff-4b67-be1a-cb9b6348b317",
-            To : "keith.gnaratne1@gmail.com",
-            From : "keith.gnaratne1@gmail.com",
-            Subject : "Enquiry",
-            Body : ebody
-        }).then(
-        message => alert(message)
-        );
+ Email.send({
+    Host : "s1.maildns.net",
+    Username : "keith.gunaratne1@gmail.com",
+    Password : "6C59A58B22D0F538A869A31F706F5AA60090",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
     }
     
 </script>
