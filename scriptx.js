@@ -13,7 +13,9 @@ const settings = {
   "data": "{\n  \"From\": \"mark.rogers@bentley.com\",\n  \"To\": \"keith.gunaratne@bentley.com\",\n  \"Subject\": \"Postmark test\",\n  \"TextBody\": \"Hello dear Postmark user.\",\n  \"HtmlBody\": \"<html><body><strong>Hello</strong> dear Postmark user.</body></html>\",\n  \"MessageStream\": \"outbound\"\n}"
 };
 
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
+$.ajax(settings).done(function() {
+        alert('Your mail is sent!');
+    }).fail(function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+    });
 });
