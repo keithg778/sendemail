@@ -6,7 +6,7 @@ const settings = {
   "headers": {
     "Accept": "application/json",
     "Content-Type": "application/json",
-    "X-Postmark-Server-Token": "server token"
+    "X-Postmark-Server-Token": "c34cf555-7142-49a4-a3cc-3f693ed01853"
   },
   "processData": false,
   "data": "{\n  \"From\": \"mark.rogers@bentley.com\",\n  \"To\": \"keith.gunaratne@bentley.com\",\n  \"Subject\": \"Postmark test\",\n  \"TextBody\": \"Hello dear Postmark user.\",\n  \"HtmlBody\": \"<html><body><strong>Hello</strong> dear Postmark user.</body></html>\",\n  \"MessageStream\": \"outbound\"\n}"
