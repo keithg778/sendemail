@@ -16,7 +16,7 @@ $('#myForm').on('submit', function(event) {
         contentType: false, // auto-detection
         processData: false // no need to parse formData to string
     }).done(function() {
-        alert('Your mail is sent!');
+        alert('Email notification is sent successfully');
     }).fail(function(error) {
         alert('Oops... ' + JSON.stringify(error));
     });
