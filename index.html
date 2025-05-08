@@ -1,9 +1,36 @@
-<!DOCTYPE html>
 <html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>
-  <script src="script3.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "RW1HRpw2mxpPmkVyK",
+      });
+   })();
+</script>
+<script>
+function sendMail() {
+var params = {
+
+name: document.getElementByID("name").value,
+email: document.getElementByID("email").value,
+message: document.getElementByID("message").value,
+};
+const serviceID = "service_te7kz9m";
+const templateID = "template_nkavvdn";
+emailjs
+ .send(serviced, templateID, params)
+ .then((res) => {
+console.log(res);
+alert("Email notification sent successfully");
+})
+.catch((err) => console.log(err));
+
+}
+</script>
+</head>
+<body onload = "sendMail()">
 </body>
 </html>
