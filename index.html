@@ -12,21 +12,19 @@
 </script>
 <script>
 function sendMail() {
-var params = {
-
-name: document.getElementByID("name").value,
-email: document.getElementByID("email").value,
-message: document.getElementByID("message").value,
+var templateParams = {
+  name: 'James',
+  notes: 'Check this out!',
 };
-const serviceID = "service_te7kz9m";
-const templateID = "template_nkavvdn";
-emailjs
- .send(serviced, templateID, params)
- .then((res) => {
-console.log(res);
-alert("Email notification sent successfully");
-})
-.catch((err) => console.log(err));
+
+emailjs.send('service_te7kz9m', 'template_nkavvdn', templateParams).then(
+  (response) => {
+    console.log('SUCCESS!', response.status, response.text);
+  },
+  (error) => {
+    console.log('FAILED...', error);
+  },
+);
 
 }
 </script>
